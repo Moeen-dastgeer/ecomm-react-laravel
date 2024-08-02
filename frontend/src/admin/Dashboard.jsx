@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 export const Dashboard = () => {
   return <>
 <div>
@@ -13,8 +13,9 @@ export const Dashboard = () => {
         <div className="icon">
           <i className="fas fa-ship" />
         </div>
-        <a href className="small-box-footer">
-          More info <i className="fas fa-arrow-circle-right" /></a>
+        <Link className="small-box-footer">
+          More info <i className="fas fa-arrow-circle-right" />
+        </Link>
       </div>
     </div>
     <div className="col-lg-4 col-6">
@@ -26,8 +27,9 @@ export const Dashboard = () => {
         <div className="icon">
           <i className="fas fa-ship" />
         </div>
-        <a href className="small-box-footer">
-          More info <i className="fas fa-arrow-circle-right" /></a>
+        <Link className="small-box-footer">
+          More info <i className="fas fa-arrow-circle-right" />
+        </Link>
       </div>
     </div>
     <div className="col-lg-4 col-6">
@@ -39,8 +41,9 @@ export const Dashboard = () => {
         <div className="icon">
           <i className="fas fa-chart-pie" />
         </div>
-        <a href className="small-box-footer">
-          More info <i className="fas fa-arrow-circle-right" /></a>
+        <Link className="small-box-footer">
+          More info <i className="fas fa-arrow-circle-right" />
+        </Link>
       </div>
     </div>
   </div>
