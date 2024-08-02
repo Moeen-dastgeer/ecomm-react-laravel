@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Layout } from "./admin/layouts/Layout"
 import { Dashboard } from "./admin/Dashboard"
-import { Products } from "./admin/Products"
+import { ProductsList }   from "./admin/products/List"
+import { ProductCreate }   from "./admin/products/Create"
 import { Layout1 } from "./web/layouts/Layout"
 import { Dashboard1 } from "./web/Dashboard"
 import { Products1} from "./web/Products"
@@ -13,7 +14,8 @@ return  <BrowserRouter>
           <Routes>
             <Route path="/admin" element={<Layout />}>
               < Route path="/admin" element={<Dashboard />} />
-              < Route path="/admin/products" element={<Products />} />
+              < Route path="/admin/products/list" element={<ProductsList />} />
+              < Route path="/admin/products/create" element={<ProductCreate />} />
             </Route>
             <Route path="/" element={<Layout1 />}>
               < Route path="/" element={<Dashboard1 />} />
