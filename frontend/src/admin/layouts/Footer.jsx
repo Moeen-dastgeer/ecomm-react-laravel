@@ -6,5 +6,7 @@ export const Footer = () => {
                 <div className="float-right d-none d-sm-inline">
                 </div>
             </footer>
+            
          </>
+        
 }

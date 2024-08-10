@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import http from '../http';
 import { useState,useEffect  } from "react"
+
 export const ProductCreate = () => {
     const [categories, setCategories]  = useState([]);
   useEffect(()=>{
@@ -30,7 +31,6 @@ export const ProductCreate = () => {
  });
 }
 
-   
   return <>
     <div className="card card-white">
             <div className="card-header">
@@ -76,6 +76,10 @@ export const ProductCreate = () => {
                                 <label>Stock</label><br />
                                 <input type="number" name="stock" id="stock" className="form-control"/>
                             </div>
+                            <div className="form-group col-md-6 col-sm-12">
+                                <label>Image</label><br />
+                                <input type="file" name="image" id="image" className="form-control"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,4 +97,9 @@ export const ProductCreate = () => {
         </form>
     </div>
 </>
+
 }
+
+
+
+

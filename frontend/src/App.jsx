@@ -6,16 +6,16 @@ import { ProductCreate }   from "./admin/products/Create"
 import { Layout1 } from "./web/layouts/Layout"
 import { Dashboard1 } from "./web/Dashboard"
 import { Products1} from "./web/Products"
+import { Edit } from "./admin/products/Edit"
 
 export const App = () => {
-  
-
 return  <BrowserRouter>
           <Routes>
             <Route path="/admin" element={<Layout />}>
               < Route path="/admin" element={<Dashboard />} />
               < Route path="/admin/products/list" element={<ProductsList />} />
               < Route path="/admin/products/create" element={<ProductCreate />} />
+              < Route path="/admin/products/edit/:id" element={<Edit />} />
             </Route>
             <Route path="/" element={<Layout1 />}>
               < Route path="/" element={<Dashboard1 />} />
@@ -24,3 +24,4 @@ return  <BrowserRouter>
           </Routes>
         </BrowserRouter>
 }
+

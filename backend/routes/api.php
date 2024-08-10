@@ -13,5 +13,7 @@ Route::get('/user', function (Request $request) {
 Route::get('/categories/list',[CategoriesController::class,'index']);
 
 Route::get('/products/list',[ProductsController::class,'index']);
-
 Route::post('/products/store',[ProductsController::class,'store']);
+Route::get('/products/edit/{id}',[ProductsController::class,'edit']);
+Route::post('/products/update/{id}',[ProductsController::class,'update']);
+Route::get('/products/delete/{id}',[ProductsController::class,'delete']);
